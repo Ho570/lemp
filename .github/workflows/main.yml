@@ -24,6 +24,8 @@ jobs:
         run: |
         
          docker-compose build
+      - name:  Docker images
+        run: docker ps
          
       - name: Build the Docker images
         run: docker-compose build
